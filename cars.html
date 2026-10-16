@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Executive Fleet &amp; Luxury Cars - SK Rental Cars | Verified Sedans, 4x4 SUVs &amp; Mercedes</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Explore our extensive fleet of 15+ verified luxury cars available for rent in Pakistan. Economy hatchbacks, executive sedans, Fortuner Legender, Prado, and Mercedes-Benz.">
+  <meta name="keywords" content="SK Rental Cars fleet, Corolla rent, Civic RS Turbo rent, Fortuner rental, Prado rental, luxury car rental Pakistan, Mercedes rent Lahore">
+  <meta name="author" content="SK Rental Cars">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER & STICKY NAVBAR ================= -->
+  <header class="navbar" id="mainNavbar">
+    <div class="container navbar-container">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="SK Rental Cars Home">
+        <div class="logo-icon-box" style="background: linear-gradient(135deg, #141E33 0%, #0A0F1D 100%); border-color: var(--color-accent);">
+          <span style="font-weight:900; font-size:1.15rem; color:var(--color-accent); font-family:var(--font-heading); letter-spacing:1px;">SK</span>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-title">SK <span>RENTAL CARS</span></span>
+          <span class="logo-tagline">Executive &amp; Luxury Fleet</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="cars.html" class="nav-link active">Fleet</a>
+        <a href="booking.html" class="nav-link">Book Now</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Live Currency Switcher -->
+        <div class="currency-selector-box" title="Change Currency">
+          <i class="fa-solid fa-coins"></i>
+          <select class="currency-select" aria-label="Select Currency">
+            <option value="PKR">PKR (₨)</option>
+            <option value="USD">USD ($)</option>
+            <option value="AED">AED (د.إ)</option>
+            <option value="GBP">GBP (£)</option>
+            <option value="SAR">SAR (﷼)</option>
+          </select>
+        </div>
+
+        <!-- Dark/Light Mode Switcher -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Theme Mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <!-- CTA Book Button -->
+        <a href="booking.html" class="btn btn-primary btn-sm nav-btn-desktop">
+          <i class="fa-solid fa-calendar-check"></i> Book Now
+        </a>
+
+        <!-- Mobile Hamburger Menu Button -->
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Open Mobile Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Slide-out Drawer -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+      <div class="mobile-nav-links">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="cars.html" class="active"><i class="fa-solid fa-car"></i> Cars Fleet</a>
+        <a href="booking.html"><i class="fa-solid fa-calendar-check"></i> Book a Car</a>
+        <a href="about.html"><i class="fa-solid fa-circle-info"></i> About Us</a>
+        <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact Us</a>
+      </div>
+      <a href="booking.html" class="btn btn-primary btn-block">
+        <i class="fa-solid fa-key"></i> Book Your Car Now
+      </a>
+    </div>
+  </header>
+
+  <!-- ================= PAGE BANNER ================= -->
+  <section class="section-dark" style="padding: 65px 0; background: linear-gradient(135deg, #0A0F1D 0%, #141E33 100%); border-bottom: 1px solid var(--border-gold);">
+    <div class="container" style="text-align: center;">
+      <span class="badge-tag">
+        <i class="fa-solid fa-shield-halved"></i> 100% Verified Executive Fleet
+      </span>
+      <h1 style="font-size: 2.8rem; font-weight: 800; margin-bottom: 12px; color: #FFFFFF;">
+        Our Premier <span style="color: var(--color-accent);">Vehicle Fleet</span>
+      </h1>
+      <p style="color: #CBD5E1; max-width: 650px; margin: 0 auto; font-size: 1.05rem;">
+        Choose from our meticulously maintained collection of sedans, 4x4 SUVs, luxury German cruisers, and economy hatchbacks. Available with driver or self-drive.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ================= CARS FILTER & LISTINGS ================= -->
+  <main class="section" style="padding-top: 20px;">
+    <div class="container">
+      
+      <!-- Interactive Filter Bar -->
+      <div class="cars-filter-bar reveal-fade-up">
+        
+        <!-- Search and Sort Row -->
+        <div class="filter-controls-row">
+          
+          <!-- Search by Car Name Input -->
+          <div class="search-input-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="carSearchInput" placeholder="Search by car name (e.g. Civic, Prado, Corolla, Mercedes)..." aria-label="Search cars">
+          </div>
+
+          <!-- Price Sort Dropdown -->
+          <div class="sort-select-box">
+            <label for="priceSortSelect"><i class="fa-solid fa-arrow-down-short-wide"></i> Sort By:</label>
+            <select id="priceSortSelect" aria-label="Sort cars">
+              <option value="default">Featured / Default</option>
+              <option value="low-high">Price: Low to High</option>
+              <option value="high-low">Price: High to Low</option>
+            </select>
+          </div>
+
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div class="category-pills-row" aria-label="Category Filters">
+          <button class="filter-pill active" data-category="All">All Categories</button>
+          <button class="filter-pill" data-category="Economy">Economy</button>
+          <button class="filter-pill" data-category="Sedan">Sedan</button>
+          <button class="filter-pill" data-category="SUV">SUV</button>
+          <button class="filter-pill" data-category="Luxury">Luxury</button>
+          <button class="filter-pill" data-category="Van">Van</button>
+        </div>
+
+        <!-- Results Counter Bar -->
+        <div class="results-count-bar">
+          <span id="carsCountText">Loading cars...</span>
+          <span><i class="fa-solid fa-check-double" style="color: var(--color-success);"></i> 100% Fully Insured &amp; Sanitized</span>
+        </div>
+
+      </div>
+
+      <!-- Cars Grid (Populated dynamically from CARS_DATA) -->
+      <div class="cars-grid cars-fleet-grid" id="fleetCarsGrid"></div>
+
+    </div>
+  </main>
+
+  <!-- ================= FLEET INQUIRY BANNER ================= -->
+  <section class="container" style="margin-bottom: 80px;">
+    <div class="cta-banner reveal-fade-up">
+      <div class="cta-content-wrapper">
+        <div class="cta-text-box">
+          <h2 class="cta-heading">Need a Specific Car Not Listed?</h2>
+          <p class="cta-subtext">
+            We source custom luxury rides, bullet-proof VIP convoys, and commercial fleets upon special request. Contact our concierge team directly.
+          </p>
+        </div>
+        <div class="cta-buttons-group">
+          <a href="contact.html" class="btn btn-outline-white btn-lg">
+            <i class="fa-solid fa-envelope"></i> Contact Concierge
+          </a>
+          <a href="https://wa.me/923001234567?text=Hello%20SK%20Rental%20Cars!%20I%20have%20a%20custom%20fleet%20inquiry." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Col 1: About & Socials -->
+        <div class="footer-about">
+          <div class="footer-logo-title">
+            SK <span>RENTAL CARS</span>
+          </div>
+          <p class="footer-desc">
+            SK Rental Cars is Pakistan's premier automotive rental company, providing luxury vehicles, transparent pricing, and 24/7 dedicated support across all major cities.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+            <li class="footer-link-item"><a href="cars.html"><i class="fa-solid fa-angle-right"></i> Cars Fleet</a></li>
+            <li class="footer-link-item"><a href="booking.html"><i class="fa-solid fa-angle-right"></i> Online Booking</a></li>
+            <li class="footer-link-item"><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+            <li class="footer-link-item"><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact &amp; FAQs</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Categories -->
+        <div>
+          <h4 class="footer-col-title">Fleet Types</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="cars.html?category=Economy"><i class="fa-solid fa-angle-right"></i> Economy Hatchbacks</a></li>
+            <li class="footer-link-item"><a href="cars.html?category=Sedan"><i class="fa-solid fa-angle-right"></i> Comfort Sedans</a></li>
+            <li class="footer-link-item"><a href="cars.html?category=SUV"><i class="fa-solid fa-angle-right"></i> 4x4 SUVs &amp; Prados</a></li>
+            <li class="footer-link-item"><a href="cars.html?category=Luxury"><i class="fa-solid fa-angle-right"></i> VIP Mercedes &amp; Luxury</a></li>
+            <li class="footer-link-item"><a href="cars.html?category=Van"><i class="fa-solid fa-angle-right"></i> Hiace Passenger Vans</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Info -->
+        <div>
+          <h4 class="footer-col-title">Contact Info</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Main Boulevard, Gulberg III, Lahore, Pakistan</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+923001234567">+92 300 1234567</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-brands fa-whatsapp"></i>
+              <a href="https://wa.me/923001234567" target="_blank" rel="noopener">+92 300 1234567</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:info@skrentalcars.com">info@skrentalcars.com</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-clock"></i>
+              <span>Mon - Sun: 24/7 Availability</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 <strong>SK Rental Cars</strong>. All Rights Reserved. "Luxury, Elegance &amp; Freedom."
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Rental Agreement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= FLOATING ACTION BUTTONS ================= -->
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/923001234567?text=Hello%20SK%20Rental%20Cars!%20I%20would%20like%20to%20inquire%20about%20a%20car%20rental." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Master JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

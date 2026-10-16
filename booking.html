@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Car Reservation - SK Rental Cars | Instant Executive Booking</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Book your rental car online with SK Rental Cars. Live multi-currency price calculation, transparent luxury rates, self-drive or with professional chauffeur, and instant WhatsApp confirmation.">
+  <meta name="keywords" content="book SK rental car, luxury car reservation Pakistan, rent car online Lahore, rent car Islamabad">
+  <meta name="author" content="SK Rental Cars">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER & STICKY NAVBAR ================= -->
+  <header class="navbar" id="mainNavbar">
+    <div class="container navbar-container">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="SK Rental Cars Home">
+        <div class="logo-icon-box" style="background: linear-gradient(135deg, #141E33 0%, #0A0F1D 100%); border-color: var(--color-accent);">
+          <span style="font-weight:900; font-size:1.15rem; color:var(--color-accent); font-family:var(--font-heading); letter-spacing:1px;">SK</span>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-title">SK <span>RENTAL CARS</span></span>
+          <span class="logo-tagline">Executive &amp; Luxury Fleet</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="cars.html" class="nav-link">Fleet</a>
+        <a href="booking.html" class="nav-link active">Book Now</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Live Currency Switcher -->
+        <div class="currency-selector-box" title="Change Currency">
+          <i class="fa-solid fa-coins"></i>
+          <select class="currency-select" aria-label="Select Currency">
+            <option value="PKR">PKR (₨)</option>
+            <option value="USD">USD ($)</option>
+            <option value="AED">AED (د.إ)</option>
+            <option value="GBP">GBP (£)</option>
+            <option value="SAR">SAR (﷼)</option>
+          </select>
+        </div>
+
+        <!-- Dark/Light Mode Switcher -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Theme Mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <!-- CTA Book Button -->
+        <a href="booking.html" class="btn btn-primary btn-sm nav-btn-desktop">
+          <i class="fa-solid fa-calendar-check"></i> Book Now
+        </a>
+
+        <!-- Mobile Hamburger Menu Button -->
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Open Mobile Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Slide-out Drawer -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+      <div class="mobile-nav-links">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="cars.html"><i class="fa-solid fa-car"></i> Cars Fleet</a>
+        <a href="booking.html" class="active"><i class="fa-solid fa-calendar-check"></i> Book a Car</a>
+        <a href="about.html"><i class="fa-solid fa-circle-info"></i> About Us</a>
+        <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact Us</a>
+      </div>
+      <a href="booking.html" class="btn btn-primary btn-block">
+        <i class="fa-solid fa-key"></i> Book Your Car Now
+      </a>
+    </div>
+  </header>
+
+  <!-- ================= BANNER ================= -->
+  <section class="section-dark" style="padding: 65px 0; background: linear-gradient(135deg, #0A0F1D 0%, #141E33 100%); border-bottom: 1px solid var(--border-gold);">
+    <div class="container" style="text-align: center;">
+      <span class="badge-tag">
+        <i class="fa-solid fa-bolt"></i> Instant Confirmation &amp; Live Estimator
+      </span>
+      <h1 style="font-size: 2.8rem; font-weight: 800; margin-bottom: 12px; color: #FFFFFF;">
+        Executive Car <span style="color: var(--color-accent);">Reservation</span>
+      </h1>
+      <p style="color: #CBD5E1; max-width: 600px; margin: 0 auto; font-size: 1.05rem;">
+        Complete your itinerary below. Watch your live price recalculate in real-time in your chosen currency, then confirm instantly on WhatsApp.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= BOOKING MAIN CONTAINER ================= -->
+  <main class="section">
+    <div class="container">
+      <div class="booking-grid">
+        
+        <!-- LEFT: THE INTERACTIVE BOOKING FORM -->
+        <div class="booking-form-card reveal-fade-up">
+          <form id="bookingForm" novalidate>
+            
+            <!-- SECTION 1: PERSONAL INFORMATION -->
+            <div class="form-section-title">
+              <i class="fa-solid fa-user-shield"></i> 1. Personal &amp; Contact Details
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">Full Legal Name <span class="required">*</span></label>
+                <input type="text" id="fullName" class="form-control" placeholder="e.g. Malik Shahzaib Khan" required>
+                <span class="error-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone / WhatsApp Number <span class="required">*</span></label>
+                <input type="tel" id="phone" class="form-control" placeholder="e.g. 0300 1234567" required>
+                <span class="error-message"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" class="form-control" placeholder="e.g. client@example.com" required>
+                <span class="error-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="cnic">CNIC or Passport No. <span style="color:var(--text-muted);font-weight:400;">(Optional)</span></label>
+                <input type="text" id="cnic" class="form-control" placeholder="e.g. 35201-1234567-1">
+              </div>
+            </div>
+
+            <!-- SECTION 2: VEHICLE & RENTAL PREFERENCES -->
+            <div class="form-section-title" style="margin-top: 30px;">
+              <i class="fa-solid fa-car-side"></i> 2. Vehicle Selection &amp; Driver Option
+            </div>
+
+            <div class="form-row-full">
+              <div class="form-group">
+                <label for="bookingCarSelect">Select Desired Vehicle <span class="required">*</span></label>
+                <select id="bookingCarSelect" class="form-control" required></select>
+                <span class="error-message"></span>
+              </div>
+            </div>
+
+            <div class="form-row-full">
+              <label style="font-size: 0.86rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 8px; display: block;">
+                Chauffeur Option <span class="required">*</span>
+              </label>
+              <div class="radio-options-row">
+                
+                <label class="radio-card-label">
+                  <input type="radio" name="driverOption" value="no" checked>
+                  <div class="radio-card-body">
+                    <span class="radio-title">Self-Drive</span>
+                    <span class="radio-subtitle">Drive yourself (Requires valid Driving License &amp; CNIC/Passport)</span>
+                  </div>
+                </label>
+
+                <label class="radio-card-label">
+                  <input type="radio" name="driverOption" value="yes">
+                  <div class="radio-card-body">
+                    <span class="radio-title">With Uniformed Executive Chauffeur</span>
+                    <span class="radio-subtitle">+ PKR 2,000 / day (Vetted, punctual &amp; professional driver)</span>
+                  </div>
+                </label>
+
+              </div>
+            </div>
+
+            <!-- SECTION 3: TRIP SCHEDULE & LOCATIONS -->
+            <div class="form-section-title" style="margin-top: 30px;">
+              <i class="fa-solid fa-map-location-dot"></i> 3. Schedule &amp; Pick-up / Drop-off
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bookingPickupDate">Pick-up Date <span class="required">*</span></label>
+                <input type="date" id="bookingPickupDate" class="form-control" required>
+                <span class="error-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="bookingReturnDate">Return Date <span class="required">*</span></label>
+                <input type="date" id="bookingReturnDate" class="form-control" required>
+                <span class="error-message"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bookingPickupLocation">Pick-up Location <span class="required">*</span></label>
+                <select id="bookingPickupLocation" class="form-control" required>
+                  <option value="Lahore Main Office (Gulberg III)">Lahore - Main Boulevard (Gulberg III)</option>
+                  <option value="Allama Iqbal Int. Airport Lahore">Lahore - Airport VIP Terminal (AIIAP)</option>
+                  <option value="Lahore Doorstep Home/Hotel">Lahore - Doorstep Delivery (DHA / Bahria / Model Town)</option>
+                  <option value="Islamabad / Rawalpindi (City / Airport)">Islamabad / Rawalpindi (City / Airport)</option>
+                  <option value="Karachi Airport / Hotel">Karachi Airport / Hotel Delivery</option>
+                  <option value="Faisalabad / Multan Delivery">Faisalabad / Multan Delivery</option>
+                </select>
+                <span class="error-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="bookingDropoffLocation">Drop-off Location <span class="required">*</span></label>
+                <select id="bookingDropoffLocation" class="form-control" required>
+                  <option value="Same as Pick-up Location">Same as Pick-up Location</option>
+                  <option value="Lahore Main Office (Gulberg III)">Lahore - Main Boulevard (Gulberg III)</option>
+                  <option value="Allama Iqbal Int. Airport Lahore">Lahore - Airport VIP Terminal (AIIAP)</option>
+                  <option value="Islamabad / Rawalpindi">Islamabad / Rawalpindi</option>
+                  <option value="Karachi City">Karachi City</option>
+                </select>
+                <span class="error-message"></span>
+              </div>
+            </div>
+
+            <!-- SECTION 4: NOTES & CONFIRMATION -->
+            <div class="form-row-full" style="margin-top: 10px;">
+              <div class="form-group">
+                <label for="specialNotes">Special Requests / Travel Notes <span style="color:var(--text-muted);font-weight:400;">(Optional)</span></label>
+                <textarea id="specialNotes" rows="3" class="form-control" placeholder="e.g. Flight number PK-302 arriving at 2:00 PM, child safety seat required, wedding flower garland decor, etc."></textarea>
+              </div>
+            </div>
+
+            <div class="form-row-full" id="termsCheckboxGroup">
+              <label style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer; font-size: 0.88rem; color: var(--text-secondary);">
+                <input type="checkbox" id="agreeTerms" style="width: 18px; height: 18px; margin-top: 2px; accent-color: var(--color-accent);" required>
+                <span>
+                  I agree to the <a href="#" style="color: var(--color-accent); text-decoration: underline;">Terms &amp; Rental Conditions</a> of SK Rental Cars and confirm that all details are accurate.
+                </span>
+              </label>
+              <span class="error-message"></span>
+            </div>
+
+            <button type="submit" id="submitBookingBtn" class="btn btn-primary btn-lg btn-block" style="margin-top: 15px;">
+              <i class="fa-solid fa-circle-check"></i> Generate Booking Pass &amp; Review
+            </button>
+
+          </form>
+        </div>
+
+        <!-- RIGHT: STICKY LIVE PRICE CALCULATOR & SUMMARY CARD -->
+        <div class="booking-summary-sticky">
+          <aside class="summary-card reveal-fade-up">
+            <div class="summary-header">
+              <div class="summary-title">
+                <i class="fa-solid fa-calculator" style="color: var(--color-accent);"></i>
+                Live Price Summary
+              </div>
+            </div>
+
+            <!-- Selected Car Preview Box -->
+            <div class="summary-car-preview">
+              <img src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?auto=format&fit=crop&w=800&q=80" alt="Car Preview" id="summaryThumb" class="preview-thumb">
+              <div class="preview-details">
+                <div class="preview-name" id="summaryCarName">Toyota Corolla Altis Grande</div>
+                <div class="preview-category" id="summaryCategory">Sedan • Automatic</div>
+                <div class="preview-rate" id="summaryDailyRate">PKR 8,000 / day</div>
+              </div>
+            </div>
+
+            <!-- Cost Breakdown Table -->
+            <div class="summary-breakdown">
+              <div class="breakdown-row">
+                <span>Rental Duration:</span>
+                <strong id="summaryDays">1 Day</strong>
+              </div>
+              <div class="breakdown-row">
+                <span>Vehicle Base Rent:</span>
+                <span id="summaryCarSubtotal">PKR 8,000</span>
+              </div>
+              <div class="breakdown-row">
+                <span>Chauffeur Surcharge:</span>
+                <span id="summaryDriverTotal">PKR 0 (Self-Drive)</span>
+              </div>
+              <div class="breakdown-row">
+                <span>Doorstep Delivery:</span>
+                <span style="color: var(--color-success); font-weight: 600;">FREE</span>
+              </div>
+              <div class="breakdown-row">
+                <span>Security Deposit:</span>
+                <span style="color: var(--text-muted); font-size: 0.82rem;">100% Refundable on Return</span>
+              </div>
+            </div>
+
+            <!-- Grand Total -->
+            <div class="breakdown-total">
+              <span class="total-label">Estimated Total:</span>
+              <span class="total-value" id="summaryGrandTotal">PKR 8,000</span>
+            </div>
+
+            <!-- VIP Promo Code Section -->
+            <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--border-color);">
+              <label style="font-size:0.8rem;font-weight:700;color:var(--text-secondary);display:block;margin-bottom:6px;">
+                <i class="fa-solid fa-ticket" style="color:var(--color-accent);"></i> Have a VIP Promo Code?
+              </label>
+              <div class="promo-code-container">
+                <input type="text" id="promoCodeInput" class="promo-input" placeholder="e.g. SKVIP10" aria-label="Promo Code">
+                <button type="button" id="applyPromoBtn" class="promo-btn">Apply</button>
+              </div>
+              <div id="promoMessage" style="font-size:0.78rem;margin-top:6px;"></div>
+            </div>
+
+            <a href="https://wa.me/923001234567?text=Hello%20SK%20Rental%20Cars!%20I%20have%20a%20booking%20inquiry." class="btn btn-whatsapp btn-block" style="margin-top:18px;" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp"></i> Quick Help via WhatsApp
+            </a>
+
+            <!-- Trust Badges List -->
+            <ul class="trust-bullet-list">
+              <li><i class="fa-solid fa-shield-check"></i> Free Cancellation up to 24 hours before pickup</li>
+              <li><i class="fa-solid fa-lock"></i> No upfront credit card required to hold vehicle</li>
+              <li><i class="fa-solid fa-gas-pump"></i> Fair fuel policy: Return with same level</li>
+            </ul>
+
+          </aside>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ================= SUCCESS CONFIRMATION MODAL & DIGITAL VOUCHER ================= -->
+  <div class="modal-overlay" id="bookingSuccessModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card" style="max-width: 650px;">
+      <button class="modal-close-btn modal-close-trigger" aria-label="Close Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-success-icon">
+        <i class="fa-solid fa-check"></i>
+      </div>
+
+      <h3 class="modal-title" id="modalTitle">Reservation Registered!</h3>
+      <p class="modal-subtext">
+        Your provisional booking has been generated. Tap WhatsApp below to lock in the reservation or save your official digital pass.
+      </p>
+
+      <div class="modal-summary-box">
+        <div class="modal-summary-row">
+          <span>Booking Reference:</span>
+          <strong id="modalBookingRef" style="color: var(--color-accent); font-family: monospace; font-size: 1.05rem;">SK-000000</strong>
+        </div>
+        <div class="modal-summary-row">
+          <span>Client Name:</span>
+          <strong id="modalCustomerName">Malik Shahzaib</strong>
+        </div>
+        <div class="modal-summary-row">
+          <span>Phone:</span>
+          <strong id="modalCustomerPhone">+92 300 1234567</strong>
+        </div>
+        <div class="modal-summary-row">
+          <span>Vehicle:</span>
+          <strong id="modalCarName">Toyota Corolla Altis Grande</strong>
+        </div>
+        <div class="modal-summary-row">
+          <span>Rental Period:</span>
+          <strong id="modalRentalDates">2026-10-15 to 2026-10-17 (2 days)</strong>
+        </div>
+        <div class="modal-summary-row">
+          <span>Chauffeur:</span>
+          <strong id="modalDriverOption">Self-Drive</strong>
+        </div>
+        <div class="modal-summary-row">
+          <span>Total Estimate:</span>
+          <strong id="modalGrandTotal" style="color:var(--color-accent);font-size:1.15rem;">PKR 16,000</strong>
+        </div>
+      </div>
+
+      <!-- Printable Voucher Container -->
+      <div id="voucherReceiptArea"></div>
+
+      <div class="modal-actions">
+        <a href="#" id="modalWhatsAppBtn" class="btn btn-whatsapp btn-lg btn-block" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i> Confirm &amp; Dispatch on WhatsApp
+        </a>
+        <button type="button" class="btn btn-outline btn-block modal-close-trigger">
+          Done / Close Window
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Col 1: About & Socials -->
+        <div class="footer-about">
+          <div class="footer-logo-title">
+            SK <span>RENTAL CARS</span>
+          </div>
+          <p class="footer-desc">
+            SK Rental Cars is Pakistan's premier automotive rental company, providing luxury vehicles, transparent pricing, and 24/7 dedicated support across all major cities.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+            <li class="footer-link-item"><a href="cars.html"><i class="fa-solid fa-angle-right"></i> Cars Fleet</a></li>
+            <li class="footer-link-item"><a href="booking.html"><i class="fa-solid fa-angle-right"></i> Online Booking</a></li>
+            <li class="footer-link-item"><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+            <li class="footer-link-item"><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact &amp; FAQs</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Categories -->
+        <div>
+          <h4 class="footer-col-title">Fleet Types</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="cars.html?category=Economy"><i class="fa-solid fa-angle-right"></i> Economy Hatchbacks</a></li>
+            <li class="footer-link-item"><a href="cars.html?category=Sedan"><i class="fa-solid fa-angle-right"></i> Comfort Sedans</a></li>
+            <li class="footer-link-item"><a href="cars.html?category=SUV"><i class="fa-solid fa-angle-right"></i> 4x4 SUVs &amp; Prados</a></li>
+            <li class="footer-link-item"><a href="cars.html?category=Luxury"><i class="fa-solid fa-angle-right"></i> VIP Mercedes &amp; Luxury</a></li>
+            <li class="footer-link-item"><a href="cars.html?category=Van"><i class="fa-solid fa-angle-right"></i> Hiace Passenger Vans</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Info -->
+        <div>
+          <h4 class="footer-col-title">Contact Info</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Main Boulevard, Gulberg III, Lahore, Pakistan</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+923001234567">+92 300 1234567</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-brands fa-whatsapp"></i>
+              <a href="https://wa.me/923001234567" target="_blank" rel="noopener">+92 300 1234567</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:info@skrentalcars.com">info@skrentalcars.com</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-clock"></i>
+              <span>Mon - Sun: 24/7 Availability</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 <strong>SK Rental Cars</strong>. All Rights Reserved. "Luxury, Elegance &amp; Freedom."
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Rental Agreement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= FLOATING ACTION BUTTONS ================= -->
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/923001234567?text=Hello%20SK%20Rental%20Cars!%20I%20would%20like%20to%20inquire%20about%20a%20car%20rental." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Master JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

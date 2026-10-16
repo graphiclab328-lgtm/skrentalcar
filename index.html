@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SK Rental Cars - Luxury Fleet &amp; Executive Chauffeur Services in Pakistan</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="SK Rental Cars offers luxury sedans, 4x4 SUVs, Fortuner Legender, Prado, and Mercedes with professional chauffeur or self-drive across Lahore, Islamabad, and Karachi. Powered by AI Fleet Concierge.">
+  <meta name="keywords" content="SK Rental Cars, luxury car rental Pakistan, rent a car Lahore, rent Fortuner, rent Prado, rent Civic RS, wedding car rental, AI car rental concierge">
+  <meta name="author" content="SK Rental Cars">
+  
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:title" content="SK Rental Cars - Executive &amp; Luxury Fleet">
+  <meta property="og:description" content="Experience unrivaled prestige with Pakistan's premier car rental service. 50+ pristine sedans, 4x4 SUVs, and VIP Mercedes cruisers.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER & STICKY NAVBAR ================= -->
+  <header class="navbar" id="mainNavbar">
+    <div class="container navbar-container">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="SK Rental Cars Home">
+        <div class="logo-icon-box" style="background: linear-gradient(135deg, #141E33 0%, #0A0F1D 100%); border-color: var(--color-accent);">
+          <span style="font-weight:900; font-size:1.15rem; color:var(--color-accent); font-family:var(--font-heading); letter-spacing:1px;">SK</span>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-title">SK <span>RENTAL CARS</span></span>
+          <span class="logo-tagline">Executive &amp; Luxury Fleet</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="cars.html" class="nav-link">Fleet</a>
+        <a href="booking.html" class="nav-link">Book Now</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Actions (Theme, Currency & CTA) -->
+      <div class="nav-actions">
+        
+        <!-- Live Currency Switcher -->
+        <div class="currency-selector-box" title="Change Currency">
+          <i class="fa-solid fa-coins"></i>
+          <select class="currency-select" aria-label="Select Currency">
+            <option value="PKR">PKR (₨)</option>
+            <option value="USD">USD ($)</option>
+            <option value="AED">AED (د.إ)</option>
+            <option value="GBP">GBP (£)</option>
+            <option value="SAR">SAR (﷼)</option>
+          </select>
+        </div>
+
+        <!-- Dark/Light Mode Switcher -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Theme Mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <!-- CTA Book Button -->
+        <a href="booking.html" class="btn btn-primary btn-sm nav-btn-desktop">
+          <i class="fa-solid fa-calendar-check"></i> Book Now
+        </a>
+
+        <!-- Mobile Hamburger Menu Button -->
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Open Mobile Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Slide-out Drawer -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+      <div class="mobile-nav-links">
+        <a href="index.html" class="active"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="cars.html"><i class="fa-solid fa-car"></i> Cars Fleet</a>
+        <a href="booking.html"><i class="fa-solid fa-calendar-check"></i> Book a Car</a>
+        <a href="about.html"><i class="fa-solid fa-circle-info"></i> About Us</a>
+        <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact Us</a>
+      </div>
+      <a href="booking.html" class="btn btn-primary btn-block">
+        <i class="fa-solid fa-key"></i> Book Your Car Now
+      </a>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero" id="homeHero">
+    <div class="container">
+      <div class="hero-content reveal-fade-up">
+        <div class="hero-badge">
+          <i class="fa-solid fa-shield-halved"></i> Premier Chauffeur &amp; Self-Drive Fleet • Pakistan
+        </div>
+        <h1 class="hero-title">
+          Drive Extraordinary. <span>Luxury &amp; Executive Mobility.</span>
+        </h1>
+        <p class="hero-subtitle">
+          Experience Pakistan's most refined automotive fleet. From VIP Mercedes-Benz and Fortuner Legender to executive sedans — backed by guaranteed availability, transparent rates, and 24/7 dedicated support in Lahore, Islamabad, and Karachi.
+        </p>
+        
+        <div class="hero-cta-group">
+          <a href="cars.html" class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-car-rear"></i> Explore All Vehicles
+          </a>
+          <a href="https://wa.me/923001234567?text=Hello%20SK%20Rental%20Cars!%20I%20would%20like%20to%20inquire%20about%20renting%20a%20car." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Instant WhatsApp VIP
+          </a>
+        </div>
+
+        <div class="hero-trust-badges">
+          <div class="trust-badge-item">
+            <i class="fa-solid fa-star" style="color:#F59E0B;"></i>
+            <span>4.9/5 Rating (1,500+ Trips)</span>
+          </div>
+          <div class="trust-badge-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>50+ Inspected Fleet</span>
+          </div>
+          <div class="trust-badge-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Zero Hidden Charges</span>
+          </div>
+          <div class="trust-badge-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>24/7 Roadside Assistance</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HERO QUICK SEARCH WIDGET ================= -->
+  <div class="hero-search-wrapper container">
+    <div class="search-box-card reveal-fade-up">
+      <div class="search-box-title">
+        <i class="fa-solid fa-magnifying-glass"></i> Find Your Perfect Ride
+      </div>
+      <form id="heroSearchForm" class="search-grid">
+        
+        <!-- Pick-up Location -->
+        <div class="search-field">
+          <label for="heroLocation"><i class="fa-solid fa-location-dot"></i> Pick-up City</label>
+          <select id="heroLocation" name="location">
+            <option value="Lahore">Lahore (All Branches &amp; Airport)</option>
+            <option value="Islamabad">Islamabad / Rawalpindi</option>
+            <option value="Karachi">Karachi City &amp; Airport</option>
+            <option value="Faisalabad">Faisalabad</option>
+            <option value="Multan">Multan</option>
+          </select>
+        </div>
+
+        <!-- Pick-up Date -->
+        <div class="search-field">
+          <label for="heroPickupDate"><i class="fa-solid fa-calendar-day"></i> Pick-up Date</label>
+          <input type="date" id="heroPickupDate" name="pickupDate">
+        </div>
+
+        <!-- Return Date -->
+        <div class="search-field">
+          <label for="heroReturnDate"><i class="fa-solid fa-calendar-check"></i> Return Date</label>
+          <input type="date" id="heroReturnDate" name="returnDate">
+        </div>
+
+        <!-- Car Type Dropdown -->
+        <div class="search-field">
+          <label for="heroCategory"><i class="fa-solid fa-filter"></i> Car Type</label>
+          <select id="heroCategory" name="category">
+            <option value="All">All Categories</option>
+            <option value="Economy">Economy Hatchbacks</option>
+            <option value="Sedan">Comfort Sedans</option>
+            <option value="SUV">Luxury &amp; Offroad SUVs</option>
+            <option value="Luxury">VIP Executive Luxury</option>
+            <option value="Van">Passenger Vans (Hiace)</option>
+          </select>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary search-submit-btn">
+          <i class="fa-solid fa-magnifying-glass"></i> Search Cars
+        </button>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- ================= EXECUTIVE MOBILITY SERVICES ================= -->
+  <section class="section" id="executiveServices" style="padding-bottom: 20px;">
+    <div class="container">
+      <div class="section-header reveal-fade-up">
+        <span class="badge-tag">Bespoke Solutions</span>
+        <h2 class="section-title">Our Executive <span>Mobility Services</span></h2>
+        <p class="section-subtitle">
+          Tailored transportation solutions designed for business leaders, high-profile delegations, family tours, and special ceremonies.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card reveal-fade-up">
+          <div class="feature-icon-wrapper">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+          <h3 class="feature-title">Corporate &amp; Diplomatic Leasing</h3>
+          <p class="feature-desc">
+            Flexible short and long-term corporate arrangements with dedicated account managers, priority replacement vehicles, and corporate tax billing.
+          </p>
+        </div>
+
+        <div class="feature-card reveal-fade-up">
+          <div class="feature-icon-wrapper">
+            <i class="fa-solid fa-plane-departure"></i>
+          </div>
+          <h3 class="feature-title">Airport VIP Meet &amp; Greet</h3>
+          <p class="feature-desc">
+            Seamless terminal pickup and drop-off at Allama Iqbal (Lahore), Islamabad International, and Jinnah International (Karachi) with real-time flight tracking.
+          </p>
+        </div>
+
+        <div class="feature-card reveal-fade-up">
+          <div class="feature-icon-wrapper">
+            <i class="fa-solid fa-champagne-glasses"></i>
+          </div>
+          <h3 class="feature-title">Luxury Wedding Convoys</h3>
+          <p class="feature-desc">
+            Spotless, decorated Mercedes, Audi, and Land Cruiser convoys escorted by professionally attired, courteous chauffeurs for unforgettable celebrations.
+          </p>
+        </div>
+
+        <div class="feature-card reveal-fade-up">
+          <div class="feature-icon-wrapper">
+            <i class="fa-solid fa-mountain-sun"></i>
+          </div>
+          <h3 class="feature-title">Northern Areas 4x4 Expeditions</h3>
+          <p class="feature-desc">
+            Rugged Fortuner Legender and Prado 4x4s prepped for northern terrains (Murree, Hunza, Skardu) accompanied by licensed mountain-route drivers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY CHOOSE US ================= -->
+  <section class="section" id="whyChooseUs">
+    <div class="container">
+      <div class="section-header reveal-fade-up">
+        <span class="badge-tag">The SK Advantage</span>
+        <h2 class="section-title">Why Choose <span>SK Rental Cars</span>?</h2>
+        <p class="section-subtitle">
+          We combine transparent pricing, pristine vehicles, and unmatched round-the-clock support to guarantee an effortless travel experience.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card reveal-fade-up">
+          <div class="feature-icon-wrapper">
+            <i class="fa-solid fa-tags"></i>
+          </div>
+          <h3 class="feature-title">Transparent Luxury Rates</h3>
+          <p class="feature-desc">
+            Competitive pricing with zero surprise charges. Enjoy special discounted rates on daily, weekly, and monthly rentals.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card reveal-fade-up">
+          <div class="feature-icon-wrapper">
+            <i class="fa-solid fa-car-on"></i>
+          </div>
+          <h3 class="feature-title">Pristine Fleet Inspection</h3>
+          <p class="feature-desc">
+            Every vehicle undergoes a 25-point mechanical inspection, complete detailing, and sanitization before handover.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card reveal-fade-up">
+          <div class="feature-icon-wrapper">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <h3 class="feature-title">24/7 Dedicated Concierge &amp; Dispatch</h3>
+          <p class="feature-desc">
+            Our senior fleet managers and round-the-clock dispatch desk are standing by for immediate roadside assistance, booking extensions, and priority support.
+          </p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card reveal-fade-up">
+          <div class="feature-icon-wrapper">
+            <i class="fa-solid fa-user-tie"></i>
+          </div>
+          <h3 class="feature-title">Professional Uniformed Chauffeurs</h3>
+          <p class="feature-desc">
+            Background-verified, courteous, and seasoned chauffeurs trained in executive protocol, defensive driving, and intercity motorway navigation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURED CARS ================= -->
+  <section class="section section-subtle" id="featuredCarsSection">
+    <div class="container">
+      <div class="section-header reveal-fade-up">
+        <span class="badge-tag">Top Tier Fleet</span>
+        <h2 class="section-title">Our Featured <span>Rental Fleet</span></h2>
+        <p class="section-subtitle">
+          Handpicked top performers popular for city commute, weddings, business delegations, and inter-city highway travel.
+        </p>
+      </div>
+
+      <!-- Interactive Fleet Category Tabs -->
+      <div class="category-pills-row home-fleet-tabs reveal-fade-up" style="justify-content:center;margin-bottom:32px;">
+        <button type="button" class="filter-pill active" data-category="All">All Vehicles</button>
+        <button type="button" class="filter-pill" data-category="Sedan">Executive Sedans</button>
+        <button type="button" class="filter-pill" data-category="SUV">4x4 Luxury SUVs</button>
+        <button type="button" class="filter-pill" data-category="Luxury">VIP Prestige</button>
+        <button type="button" class="filter-pill" data-category="Economy">Economy</button>
+      </div>
+
+      <!-- Injected dynamically via script.js (top 6 cars) -->
+      <div class="cars-grid featured-cars-grid"></div>
+
+      <div style="text-align: center; margin-top: 50px;" class="reveal-fade-up">
+        <a href="cars.html" class="btn btn-secondary btn-lg">
+          <i class="fa-solid fa-grip"></i> View Full 15+ Cars Catalog
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HOW IT WORKS (3 STEPS) ================= -->
+  <section class="section" id="howItWorks">
+    <div class="container">
+      <div class="section-header reveal-fade-up">
+        <span class="badge-tag">Simple &amp; Hassle Free</span>
+        <h2 class="section-title">How It <span>Works</span></h2>
+        <p class="section-subtitle">
+          Get behind the wheel in 3 easy steps without long paperwork or confusing procedures.
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <!-- Step 1 -->
+        <div class="step-card reveal-fade-up">
+          <div class="step-number-bubble">1</div>
+          <div class="step-icon"><i class="fa-solid fa-car-side"></i></div>
+          <h3 class="step-title">Choose Your Vehicle</h3>
+          <p class="step-desc">
+            Browse our diverse fleet of economy hatchbacks, premium sedans, 4x4 SUVs, and executive Mercedes.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card reveal-fade-up">
+          <div class="step-number-bubble">2</div>
+          <div class="step-icon"><i class="fa-solid fa-laptop-file"></i></div>
+          <h3 class="step-title">Instant Online Reservation</h3>
+          <p class="step-desc">
+            Select your itinerary, choose self-drive or executive chauffeur, and receive an instant live price calculation and digital voucher.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card reveal-fade-up">
+          <div class="step-number-bubble">3</div>
+          <div class="step-icon"><i class="fa-solid fa-road"></i></div>
+          <h3 class="step-title">Enjoy the Journey</h3>
+          <p class="step-desc">
+            Receive the vehicle at your doorstep or airport terminal, and travel with peace of mind.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STATS COUNTER SECTION ================= -->
+  <section class="stats-section" id="statsSection">
+    <div class="container">
+      <div class="stats-grid">
+        
+        <div class="stat-item reveal-fade-up">
+          <div class="stat-icon"><i class="fa-solid fa-face-smile"></i></div>
+          <div class="stat-number" data-target="1500" data-suffix="+">0</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+
+        <div class="stat-item reveal-fade-up">
+          <div class="stat-icon"><i class="fa-solid fa-car"></i></div>
+          <div class="stat-number" data-target="50" data-suffix="+">0</div>
+          <div class="stat-label">Premium Fleet Cars</div>
+        </div>
+
+        <div class="stat-item reveal-fade-up">
+          <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+          <div class="stat-number" data-target="8" data-suffix="+ Years">0</div>
+          <div class="stat-label">Industry Excellence</div>
+        </div>
+
+        <div class="stat-item reveal-fade-up">
+          <div class="stat-icon"><i class="fa-solid fa-clock"></i></div>
+          <div class="stat-number" data-target="24" data-suffix="/7">0</div>
+          <div class="stat-label">Dedicated Support</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIALS SLIDER ================= -->
+  <section class="section section-subtle" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal-fade-up">
+        <span class="badge-tag">Customer Stories</span>
+        <h2 class="section-title">What Our <span>Clients Say</span></h2>
+        <p class="section-subtitle">
+          Real feedback from corporate executives, families, and international travelers who rely on SK Rental Cars.
+        </p>
+      </div>
+
+      <div class="testimonial-slider-container reveal-fade-up">
+        <div class="testimonial-track">
+          
+          <!-- Slide 1 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+              <div class="testimonial-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "Rented a Toyota Fortuner Legender for a 5-day tour to Murree and Naran. The car was spotless, tires were brand new, and the booking process was completely frictionless. Truly the most professional car rental service in Pakistan!"
+              </p>
+              <div class="testimonial-author-box">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Hamza Malik" class="author-avatar">
+                <div class="author-info">
+                  <div class="author-name">Hamza Malik</div>
+                  <div class="author-meta">Rented Toyota Fortuner • Lahore</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+              <div class="testimonial-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "I booked a Honda Civic RS Turbo with chauffeur for my overseas corporate visits. The driver arrived in uniform 15 minutes early and was exceptionally courteous. The multi-currency converter and digital voucher were amazing features."
+              </p>
+              <div class="testimonial-author-box">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="Zainab Qureshi" class="author-avatar">
+                <div class="author-info">
+                  <div class="author-name">Zainab Qureshi</div>
+                  <div class="author-meta">Corporate Executive • Islamabad</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+              <div class="testimonial-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "We hired a Mercedes E-Class for my brother's wedding ceremony. The vehicle arrived decorated flawlessly and gleaming. SK Rental Cars made our family celebration stress-free and unforgettable!"
+              </p>
+              <div class="testimonial-author-box">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Omar Sheikh" class="author-avatar">
+                <div class="author-info">
+                  <div class="author-name">Omar Sheikh</div>
+                  <div class="author-meta">Wedding VIP Rental • Karachi</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Slider Controls -->
+        <div class="slider-controls">
+          <button class="slider-btn slider-prev-btn" aria-label="Previous Review">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="slider-dots"></div>
+          <button class="slider-btn slider-next-btn" aria-label="Next Review">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CALL TO ACTION BANNER ================= -->
+  <section class="container" style="margin-bottom: 90px;">
+    <div class="cta-banner reveal-fade-up">
+      <div class="cta-content-wrapper">
+        <div class="cta-text-box">
+          <h2 class="cta-heading">Ready for an Unforgettable Journey?</h2>
+          <p class="cta-subtext">
+            Reserve your vehicle today with just a few clicks or contact our 24/7 Concierge desk. Instant WhatsApp confirmation, transparent rates, and guaranteed vehicle availability.
+          </p>
+        </div>
+        <div class="cta-buttons-group">
+          <a href="tel:+923001234567" class="btn btn-outline-white btn-lg">
+            <i class="fa-solid fa-phone"></i> Call +92 300 1234567
+          </a>
+          <a href="https://wa.me/923001234567?text=Hello%20SK%20Rental%20Cars!%20I%20want%20to%20book%20a%20car." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Col 1: About & Socials -->
+        <div class="footer-about">
+          <div class="footer-logo-title">
+            SK <span>RENTAL CARS</span>
+          </div>
+          <p class="footer-desc">
+            SK Rental Cars is Pakistan's premier automotive rental company, providing luxury vehicles, transparent pricing, and 24/7 dedicated support across all major cities.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+            <li class="footer-link-item"><a href="cars.html"><i class="fa-solid fa-angle-right"></i> Cars Fleet</a></li>
+            <li class="footer-link-item"><a href="booking.html"><i class="fa-solid fa-angle-right"></i> Online Booking</a></li>
+            <li class="footer-link-item"><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+            <li class="footer-link-item"><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact &amp; FAQs</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Categories -->
+        <div>
+          <h4 class="footer-col-title">Fleet Types</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="cars.html?category=Economy"><i class="fa-solid fa-angle-right"></i> Economy Hatchbacks</a></li>
+            <li class="footer-link-item"><a href="cars.html?category=Sedan"><i class="fa-solid fa-angle-right"></i> Comfort Sedans</a></li>
+            <li class="footer-link-item"><a href="cars.html?category=SUV"><i class="fa-solid fa-angle-right"></i> 4x4 SUVs &amp; Prados</a></li>
+            <li class="footer-link-item"><a href="cars.html?category=Luxury"><i class="fa-solid fa-angle-right"></i> VIP Mercedes &amp; Luxury</a></li>
+            <li class="footer-link-item"><a href="cars.html?category=Van"><i class="fa-solid fa-angle-right"></i> Hiace Passenger Vans</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Info -->
+        <div>
+          <h4 class="footer-col-title">Contact Info</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Main Boulevard, Gulberg III, Lahore, Pakistan</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+923001234567">+92 300 1234567</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-brands fa-whatsapp"></i>
+              <a href="https://wa.me/923001234567" target="_blank" rel="noopener">+92 300 1234567</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:info@skrentalcars.com">info@skrentalcars.com</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-clock"></i>
+              <span>Mon - Sun: 24/7 Availability</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 <strong>SK Rental Cars</strong>. All Rights Reserved. "Luxury, Elegance &amp; Freedom."
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Rental Agreement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= FLOATING ACTION BUTTONS ================= -->
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/923001234567?text=Hello%20SK%20Rental%20Cars!%20I%20would%20like%20to%20inquire%20about%20a%20car%20rental." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Master JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
